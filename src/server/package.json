@@ -2,10 +2,10 @@
   "name": "server",
   "version": "1.0.0",
   "description": "Server-side TODO list application",
-  "main": "index.js",
+  "main": "loader.js",
   "scripts": {
     "dev": "nodemon",
-    "prod": "pm2 start config/loader.js --name todo-app"
+    "prod": "pm2 start loader.js --name todo-app"
   },
   "keywords": [],
   "author": "Níkolas Martins Vargas",
