@@ -1,15 +1,18 @@
 import React from 'react';
 import Grid from '../../utils/Grid';
+import BtnAndIcon from '../../utils/ButtonAndIcon';
 
 export default props => (
   <div role='form' className='todoForm'>
     <Grid cols='12 9 10'>
-      <input id="description" className='form-control' placeholder='Create your task' />
+      <input id="description"
+             className='form-control'
+             placeholder='Create your task'
+             value={props.description}
+             onChange={props.handleChange}/>
     </Grid>
     <Grid cols='12 3 2'>
-      <button className='btn btn-primary'>
-        <i className='fa fa-plus' />
-      </button>
+      <BtnAndIcon style='primary' icon='plus' onClick={props.handleAdd}/>
     </Grid>
   </div>
 )
