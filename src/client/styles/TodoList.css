@@ -1,0 +1,8 @@
+.markedAsDone {
+  text-decoration: line-through;
+  color: #777;
+}
+
+.btn:not(:last-child) {
+  margin-right: 5px;
+}
