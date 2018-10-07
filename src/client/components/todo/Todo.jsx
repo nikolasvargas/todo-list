@@ -58,7 +58,6 @@ class Todo extends Component {
     const search  = description ? `&description__regex=/${description}/` : '';
     axios.get(`${URL}?sort=-createdAt${search}`)
       .then(res => this.setState({...this.state, description: description, list: res.data}));
-      console.log(this.state);
   }
 
   render() {
@@ -66,6 +65,7 @@ class Todo extends Component {
       <div>
         <PageHeader name='Todo' small='Register' />
         <TodoForm description={this.state.description}
+                  disabled={this.state.description.length === 0}
                   handleAdd={this.handleAdd}
                   handleChange={this.handleChange}
                   handleSearch={this.handleSearch}

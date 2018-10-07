@@ -9,12 +9,12 @@ export default props => (
              className='form-control'
              placeholder='Create your task'
              value={props.description}
-             onChange={props.handleChange}/>
+             onChange={props.handleChange} />
     </Grid>
     <Grid cols='12 3 2'>
-      <BtnAndIcon style='primary' icon='plus' onClick={props.handleAdd}/>
-      <BtnAndIcon style='info' icon='search' onClick={props.handleSearch}/>
-      <BtnAndIcon style='secondary' icon='refresh' onClick={props.handleClearSearch}/>
+      <BtnAndIcon style='primary' icon='plus' onClick={props.handleAdd} />
+      <BtnAndIcon style='info' icon='search' disabled={props.disabled} onClick={props.handleSearch} />
+      <BtnAndIcon style='secondary' icon='refresh' onClick={props.handleClearSearch} />
     </Grid>
   </div>
 )
