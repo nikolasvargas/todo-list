@@ -12,9 +12,9 @@ export default props => (
              onChange={props.handleChange} />
     </Grid>
     <Grid cols='12 3 2'>
-      <BtnAndIcon style='primary' icon='plus' onClick={props.handleAdd} />
+      <BtnAndIcon style='primary' icon='plus' disabled={props.disabled} onClick={props.handleAdd} />
       <BtnAndIcon style='info' icon='search' disabled={props.disabled} onClick={props.handleSearch} />
-      <BtnAndIcon style='secondary' icon='refresh' onClick={props.handleClearSearch} />
+      <BtnAndIcon style='dark' icon='refresh' onClick={props.handleClearSearch} />
     </Grid>
   </div>
 )

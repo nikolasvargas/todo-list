@@ -4,6 +4,7 @@ import axios from 'axios';
 
 import TodoList from './TodoList';
 import TodoForm from './TodoForm';
+import Grid from '../../utils/Grid';
 
 const URL = 'http://localhost:5050/api/todos';
 
@@ -66,8 +67,8 @@ class Todo extends Component {
         <PageHeader name='Todo' small='Register' />
         <TodoForm description={this.state.description}
                   disabled={this.state.description.length === 0}
-                  handleAdd={this.handleAdd}
                   handleChange={this.handleChange}
+                  handleAdd={this.handleAdd}
                   handleSearch={this.handleSearch}
                   handleClearSearch={this.handleClearSearch} />
         <TodoList list={this.state.list}

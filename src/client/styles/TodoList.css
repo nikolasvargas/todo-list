@@ -6,3 +6,8 @@
 .btn:not(:last-child) {
   margin-right: 5px;
 }
+
+.gridSpacing {
+  padding-left: 0;
+  padding-bottom: 30px;
+}
