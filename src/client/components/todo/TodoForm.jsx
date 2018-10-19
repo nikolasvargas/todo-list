@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Grid from '../../utils/Grid';
 import BtnAndIcon from '../../utils/ButtonAndIcon';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { changeDescription, search, add, clearSearch } from './TodoActions';
 
-class TodoForm extends Component {
+class TodoForm extends React.Component {
   constructor(props) {
     super(props);
     this.keyHandler = this.keyHandler.bind(this);

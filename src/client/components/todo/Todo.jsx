@@ -5,7 +5,7 @@ import TodoList from './TodoList';
 import TodoForm from './TodoForm';
 
 export default props => (
-  <div>
+  <div className="container">
     <PageHeader name='Todo' small='Register' />
     <TodoForm />
     <TodoList />

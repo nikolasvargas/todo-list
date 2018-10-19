@@ -7,8 +7,10 @@ import Menu from '../views/Menu'
 import Routes from '../helpers/routes';
 
 export default props => (
-  <div className='container'>
-    <Menu />
-    <Routes />
+  <div>
+    <header>
+      <Menu />
+    </header>
+      <Routes />
   </div>
 )

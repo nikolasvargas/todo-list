@@ -1,8 +1,16 @@
 import React from 'react';
-import PageHeader from '../../views/PageHeader';
 
-export default props => (
-  <div>
-    <PageHeader name='About' small='me'/>
-  </div>
-)
+class About extends React.Component {
+
+  render() {
+    return (
+      <div>
+        <div className="container">
+          <h1 className="title">página about</h1>
+        </div>
+      </div>
+    )
+  }
+}
+
+export default About;
